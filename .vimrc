@@ -43,5 +43,9 @@ let g:ctrlp_custom_ignore = {
 " ctrlpvim: setting a path where finding a file
 let g:ctrlp_working_path_mode = 'ra'
 
+" ctrlpvim: setting mru as default mode
+let g:ctrlp_map='<C-p>'
+let g:ctrlp_cmd='CtrlPMRU'
+
 " gruvbox: making background darker
 let g:gruvbox_contrast_dark="hard"
