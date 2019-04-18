@@ -28,6 +28,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 colorscheme gruvbox
 set background=dark
+syntax on
 
 map <C-n> <ESC>:NERDTreeToggle<CR> 
 nnoremap H gT
