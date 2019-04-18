@@ -45,7 +45,9 @@ let g:ctrlp_working_path_mode = 'ra'
 
 " ctrlpvim: setting mru as default mode
 let g:ctrlp_map='<C-p>'
-let g:ctrlp_cmd='CtrlPMRU'
+
+" ctrlpvim: removing the limit of maxinum number of files
+let g:ctrlp_max_files=0
 
 " gruvbox: making background darker
 let g:gruvbox_contrast_dark="hard"
