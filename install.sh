@@ -9,3 +9,4 @@ vim +PluginInstall +qall
 mkdir -p ~/.config/nvim/bundle
 cp init.vim ~/.config/nvim/
 git clone https://framagit.org/tyreunom/coquille.git ~/.config/nvim/bundle/coquille
+nvim +UpdateRemotePlugins +q
