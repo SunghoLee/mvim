@@ -7,6 +7,7 @@ set shiftwidth=2
 set softtabstop=4
 set smarttab
 set expandtab
+set textwidth=80
 
 filetype off                  " required
 
@@ -23,6 +24,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'morhetz/gruvbox'
+Plugin 'junegunn/vim-easy-align'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -31,12 +33,17 @@ set background=dark
 syntax on
 
 map <C-n> <ESC>:NERDTreeToggle<CR> 
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 nnoremap H gT
 nnoremap L gt
 
 " ctrlpvim: ignore some folders and files for finding 
 let g:ctrlp_custom_ignore = {
-      \ 'dir': '\.git$\|public$\|log$\|tmp$\vendor$',
+      \ 'dir':  '\.git$\|public$\|log$\|tmp$\vendor$',
       \ 'file': '\v\.(exe|sh|jar|class)$'
       \}
 
