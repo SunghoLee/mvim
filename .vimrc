@@ -39,6 +39,12 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" for Coqtail
+nmap <C-k> <leader>cj
+nmap <C-j> <leader>ck
+nmap <C-l> <leader>cl
+
 nnoremap H gT
 nnoremap L gt
 
