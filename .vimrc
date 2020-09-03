@@ -7,7 +7,8 @@ set shiftwidth=2
 set softtabstop=4
 set smarttab
 set expandtab
-set textwidth=80
+set textwidth=0
+set cole=0
 
 filetype off                  " required
 
@@ -53,6 +54,9 @@ let g:ctrlp_custom_ignore = {
       \ 'dir':  '\.git$\|public$\|log$\|tmp$\vendor$',
       \ 'file': '\v\.(exe|sh|jar|class)$'
       \}
+
+" clear the conceal mode in tex files
+let g:tx_conceal=''
 
 " ctrlpvim: setting a path where finding a file
 let g:ctrlp_working_path_mode = 'ra'
