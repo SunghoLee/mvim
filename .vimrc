@@ -103,3 +103,12 @@ let g:gruvbox_contrast_dark="hard"
 "  endif
 "endfor
 "" ## end of OPAM user-setup addition for vim / base ## keep this line
+
+let g:indentLine_setColors = 0
+
+let g:tex_conceal = ''
+let &conceallevel = 0
+"setl tw=0
+"setl fo=
+"setl nojs
+"setl nosmartindent
