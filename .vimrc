@@ -14,25 +14,27 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'jpo/vim-railscasts-theme'
-Plugin 'Yggdroot/indentLine'
-Plugin 'scrooloose/nerdtree'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'morhetz/gruvbox'
-Plugin 'whonore/coqtail'
-Plugin 'junegunn/vim-easy-align'
+Plug 'VundleVim/Vundle.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'jpo/vim-railscasts-theme'
+Plug 'Yggdroot/indentLine'
+Plug 'scrooloose/nerdtree'
+Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'morhetz/gruvbox'
+Plug 'whonore/coqtail'
+Plug 'junegunn/vim-easy-align'
+Plug 'fsharp/vim-fsharp', {
+      \ 'for': 'fsharp',
+      \ 'do':  'make fsautocomplete',
+      \}
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()            " required
 colorscheme gruvbox
 set background=dark
-syntax on
 
 map <C-n> <ESC>:NERDTreeToggle<CR> 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
