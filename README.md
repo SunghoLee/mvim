@@ -2,7 +2,8 @@
 git configuration file for Sungho Lee.
 
 ## Prerequirement
-Install Vundle before.
+* make
+* unzip
 
 ## Install
 Copy .vimrc file to ~/
