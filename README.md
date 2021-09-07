@@ -6,5 +6,4 @@ git configuration file for Sungho Lee.
 * unzip
 
 ## Install
-Copy .vimrc file to ~/
-Type :PluginUpdate
+Just run `./install.sh`
