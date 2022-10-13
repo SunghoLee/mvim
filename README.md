@@ -1,5 +1,5 @@
 # mvim
-git configuration file for Sungho Lee.
+My personal vim configuration
 
 ## Prerequirement
 * make
