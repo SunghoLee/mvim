@@ -1,0 +1,3 @@
+return {
+  "ranjithshegde/ccls.nvim",
+}
