@@ -28,6 +28,7 @@ function setting_for_tex {
 
 function setting_for_ocaml {
   opam install ocaml-lsp-server
+  opam install ocamlformat
 }
 
 function setting_for_cpp {
